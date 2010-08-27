@@ -24,7 +24,7 @@ class AboutHashes < EdgeCase::Koan
     hash = { :one => "uno", :two => "dos" }
     hash[:one] = "eins"
 
-    expected = { :one => __, :two => "dos" }
+    expected = { :one => "eins", :two => "dos" }
     assert_equal expected, hash
 
     # Bonus Question: Why was "expected" broken out into a variable
