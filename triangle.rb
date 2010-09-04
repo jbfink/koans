@@ -14,6 +14,16 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+if (a <= 0 or b <= 0 or c<=0)
+    raise TriangleError
+  end
+sides = [a, b, c].sort
+  
+  if (sides[0] + sides[1] <= sides[2])
+    raise TriangleError
+  end
+
+
 if a == b and b == c
 then return :equilateral
 elsif a == b or b == c or c == a
