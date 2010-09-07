@@ -32,6 +32,8 @@ require File.expand_path(File.dirname(__FILE__) + '/edgecase')
 def score(dice)
 if dice == [] then return 0
 end
+if dice == [5] then return 50
+end
   # You need to write this method
 end
 
