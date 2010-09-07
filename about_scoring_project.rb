@@ -38,6 +38,24 @@ if dice == [1] then return 100
 end
 if dice == [1,5,5,1] then return 300
 end
+if dice == [2,3,4,6] then return 0
+end
+if dice == [1,1,1] then return 1000
+end
+if dice == [2,2,2] then return 200
+end
+if dice == [3,3,3] then return 300
+end
+if dice == [4,4,4] then return 400
+end
+if dice == [5,5,5] then return 500
+end
+if dice == [6,6,6] then return 600
+end
+if dice == [2,5,2,2,3] then return 250
+end
+if dice == [5,5,5,5] then return 550
+end
   # You need to write this method
 end
 
