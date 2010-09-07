@@ -36,6 +36,8 @@ if dice == [5] then return 50
 end
 if dice == [1] then return 100
 end
+if dice == [1,5,5,1] then return 300
+end
   # You need to write this method
 end
 
