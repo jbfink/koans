@@ -147,7 +147,7 @@ class AboutClasses < EdgeCase::Koan
     end
 
     def to_s
-      __
+      "#{@name}" 
     end
 
     def inspect
