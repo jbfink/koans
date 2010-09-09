@@ -31,7 +31,7 @@ class AboutClassMethods < EdgeCase::Koan
     def fido.wag
       :fidos_wag
     end
-    assert_equal __, fido.wag
+    assert_equal :fidos_wag, fido.wag
   end
 
   def test_other_objects_are_not_affected_by_these_singleton_methods
@@ -41,7 +41,7 @@ class AboutClassMethods < EdgeCase::Koan
       :fidos_wag
     end
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       rover.wag
     end
   end
