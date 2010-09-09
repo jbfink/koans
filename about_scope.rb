@@ -69,12 +69,12 @@ class AboutScope < EdgeCase::Koan
   end
 
   def test_constants_can_be_looked_up_explicitly
-    assert_equal __, PI == AboutScope.const_get("PI")
-    assert_equal __, MyString == AboutScope.const_get("MyString")
+    assert_equal true, PI == AboutScope.const_get("PI")
+    assert_equal true, MyString == AboutScope.const_get("MyString")
   end
 
   def test_you_can_get_a_list_of_constants_for_any_class_or_module
-    assert_equal __, Jims.constants
+    assert_equal ["Dog"], Jims.constants
     assert Object.constants.size > _n_(10)
   end
 end
