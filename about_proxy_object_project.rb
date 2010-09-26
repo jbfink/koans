@@ -21,6 +21,7 @@ attr_reader :messages
   def method_missing(method_name, *args, &block)
     @messages.push(method_name)
     @object.__send__(method_name, *args) 
+  end
   def called?(message)
   return true unless @messages.index(message).nil?
   false
@@ -33,7 +34,6 @@ end
   end
 
   # WRITE CODE HERE
-end
 
 # The proxy object should pass the following Koan:
 #
